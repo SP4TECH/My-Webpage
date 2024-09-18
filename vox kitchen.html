@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOX Kitchen</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-O8CZZW6N5J5R0+eUg0tKQrUFgEVl0+L2KjB9VZC5Gx3ZyMq9Q7FjCj1+CJ6VkB/gR6MK3nFVtG6zJuQn+ZmaYg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* General Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            animation: fadeInDown 1s ease-in-out;
+        }
+
+        /* Navigation Styles */
+        nav {
+            margin-top: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        nav ul li {
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav ul li:hover {
+            color: #ffe1d0;
+        }
+
+        /* Main Container */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        /* Section Titles */
+        .section-title {
+            font-size: 2rem;
+            color: #ff7e5f;
+            margin-bottom: 20px;
+            position: relative;
+            text-align: center;
+        }
+
+        .section-title::after {
+            content: '';
+            width: 100px;
+            height: 3px;
+            background-color: #ff7e5f;
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* Introduction Section */
+        .intro {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .intro img {
+            width: 100%;
+            max-width: 300px; /* Reduced the image size */
+            border-radius: 15px;
+            margin: 20px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            animation: zoomIn 1s ease;
+        }
+
+        .intro p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-top: 20px;
+            text-align: justify;
+        }
+
+        /* Content Sections */
+        .content-section {
+            margin: 60px 0;
+        }
+
+        .content-section img {
+            width: 100%;
+            max-width: 300px; /* Reduced the image size */
+            border-radius: 15px;
+            margin: 20px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            animation: zoomIn 1s ease;
+        }
+
+        .content-section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-top: 20px;
+            text-align: justify;
+        }
+
+        .content-section ul {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        .content-section ul li {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            animation: fadeInLeft 1s ease;
+        }
+
+        .content-section ul li::before {
+            content: "\f058";
+            font-family: 'Font Awesome 5 Free';
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-weight: 900;
+            color: #ff7e5f;
+            font-size: 1.2rem;
+        }
+
+        /* Video Styles */
+        .video-container {
+            display: flex;
+            justify-content: center;
+            margin: 40px 0;
+        }
+
+        .video-container video {
+            width: 100%;
+            max-width: 600px; /* Reduced the video size */
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            outline: none;
+        }
+
+        /* Pagination Styles */
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin: 40px 0;
+            gap: 20px;
+        }
+
+        .pagination a {
+            padding: 12px 25px;
+            background-color: #ff7e5f;
+            color: #fff;
+            border-radius: 50px;
+            font-weight: 500;
+            transition: background-color 0.3s;
+        }
+
+        .pagination a:hover {
+            background-color: #feb47b;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 60px;
+            position: relative;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        footer .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 15px;
+        }
+
+        footer .social-icons a {
+            color: #fff;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+
+        footer .social-icons a:hover {
+            color: #ff7e5f;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .intro img,
+            .content-section img,
+            .video-container video {
+                width: 100%;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>VOX KITCHEN</h1>
+        <nav>
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#ambience">Ambience</a></li>
+                <li><a href="#culinary-delights">Culinary Delights</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <!-- Introduction Section -->
+        <section id="introduction" class="intro">
+            <h2 class="section-title">Welcome to VOX Kitchen</h2>
+            <img src="6206056571549629923.jpg" alt="VOX Kitchen">
+            <p>
+                <strong>VOX Kitchen</strong> offers a luxurious dining experience with its rooftop setting, providing panoramic views of the city skyline and scenic surroundings. The ambiance is elegant, featuring comfortable seating arrangements and ambient lighting that enhances the dining experience during both daytime and nighttime. VOX is renowned for its diverse menu that spans various cuisines, catering to a wide range of tastes and preferences. From continental delicacies to Asian fusion dishes and traditional Indian flavors, the restaurant ensures there's something for everyone. The food served at VOX is known for its high quality and exquisite presentation, prepared using fresh, locally, and internationally sourced ingredients to ensure authenticity and flavor in every bite. Our attentive and professional staff provide exceptional service, making guests feel welcome and ensuring a memorable dining experience from start to finish. Whether it's a romantic dinner, celebration, or business gathering, VOX Kitchen offers a sophisticated and unforgettable atmosphere.
+            </p>
+        </section>
+
+        <!-- Ambience Section -->
+        <section id="ambience" class="content-section">
+            <h2 class="section-title">Ambience</h2>
+            <img src="voxam.jpeg" alt="VOX Ambience">
+            <p>
+                At <strong>VOX Kitchen</strong>, guests are treated to spectacular views through floor-to-ceiling windows and spacious outdoor terraces, offering breathtaking cityscapes and waterfront vistas. The upscale and stylish decor is designed to create a memorable and comfortable dining experience. Our menu features a combination of fine dining and signature cocktails, showcasing a range of international cuisines as well as local flavors. We focus not only on delicious food but also on impeccable presentation and an overall delightful dining experience.
+            </p>
+            <div class="video-container">
+                <video controls poster="video-poster.jpg">
+                    <source src="video6206056571093389415.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <p>
+                VOX is the perfect setting for both intimate dining experiences and larger gatherings such as corporate events, celebrations, and romantic dates. To enhance your visit, we often feature live music, DJs, and other forms of entertainment, especially during evenings and weekends. Reservations are recommended to ensure availability, and a smart casual dress code is encouraged to maintain our sophisticated ambiance.
+            </p>
+            <img src="voxam3.jpeg" alt="VOX Dining Area">
+        </section>
+
+        <!-- Culinary Delights Section -->
+        <section id="culinary-delights" class="content-section">
+            <h2 class="section-title">Culinary Delights</h2>
+            <img src="vox1.jpg" alt="VOX Culinary Delights">
+            <p>
+                <strong>VOX Kitchen</strong> offers an exquisite variety of kebabs, celebrated for their flavorful grilled and skewered meats, prepared to perfection by our expert chefs. Some of our popular offerings include:
+            </p>
+            <ul>
+                <li><strong>Shish Kebab:</strong> Cubes of marinated meat skewered with fresh vegetables and grilled to succulent perfection.</li>
+                <li><strong>Kofta Kebab:</strong> Ground meat blended with aromatic spices, shaped into patties, and grilled over open flames.</li>
+                <li><strong>Seekh Kebab:</strong> Minced meat mixed with herbs and spices, molded around skewers, and grilled until tender and juicy.</li>
+                <li><strong>Chicken Tikka:</strong> Boneless chicken pieces marinated in a spiced yogurt blend and grilled, offering a burst of flavors.</li>
+                <li><strong>Adana Kebab:</strong> A traditional Turkish delicacy featuring minced meat seasoned with chili and herbs, grilled over charcoal.</li>
+                <li><strong>Lamb Shashlik:</strong> Tender lamb pieces marinated and skewered with vegetables, then grilled to perfection.</li>
+                <li><strong>Vegetable Kebabs:</strong> A delightful assortment of marinated and grilled seasonal vegetables, served with flavorful dipping sauces.</li>
+                <li><strong>Mixed Grill Platter:</strong> A sumptuous selection of various kebabs and grilled meats, accompanied by an array of sides and sauces.</li>
+            </ul>
+            <p>
+                Each dish is crafted with meticulous attention to detail, ensuring a harmonious blend of flavors and textures that delight the palate. Pair your meal with our curated selection of fine wines and signature cocktails for an unparalleled dining experience.
+            </p>
+        </section>
+
+        <!-- Pagination -->
+        <div class="pagination">
+
+
+<a href="nmr.html"class="button">Previous</a>
+              <a href="home.html">Home</a>
+          <a href="socialkitchen.html"class="button">Next</a>
+
+
+  
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>&copy; 2024 VOX KITCHEN. All rights reserved.</p>
+        <p>Contact us at: <a href="mailto:info@voxkitchen.com">info@voxkitchen.com</a> | Phone: (123) 456-7890</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-instagram-square"></i></a>
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+            <a href="#"><i class="fab fa-tripadvisor"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>

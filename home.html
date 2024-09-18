@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Importing the Poppins font from Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+        body {
+            background-color: #f9f9f9; /* Updated background color */
+            color: #333; /* Updated text color */
+            font-family: 'Poppins', sans-serif; /* Updated font family */
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            overflow-x: hidden; /* Prevent horizontal scrollbar due to marquee */
+            scroll-behavior: smooth; /* Smooth scrolling */
+        }
+
+        header {
+            background: #ff4500; /* Header background color */
+            color: #fff; /* Header text color */
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 28px;
+            animation: fadeInDown 1s ease-in-out;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            background: #fff; /* Container background color */
+            box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            border: 2px solid #ff4500; /* Border color matching header */
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        h2 {
+            font-size: 3em;
+            color: #ff4500; /* Updated heading color */
+            margin: 20px 0;
+            border-bottom: 2px solid #ff4500; /* Heading border color */
+            padding-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+            animation: fadeInLeft 1s ease-in-out;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 6px solid #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            margin-top: 20px;
+            animation: zoomIn 1s ease-in-out;
+        }
+
+        .marquee {
+            background-color: rgba(0, 0, 0, 0.6); /* Marquee background color */
+            padding: 10px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .marquee p {
+            font-size: 1.5em;
+            margin: 0;
+            color: #fff; /* Marquee text color */
+            white-space: nowrap;
+            overflow: hidden;
+            animation: scroll 15s linear infinite;
+        }
+
+        .restaurant-img {
+            display: block;
+            margin: 20px auto;
+            max-width: 600px;
+        }
+
+        .dish-img {
+            float: right;
+            margin-left: 20px;
+            max-width: 250px;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #ff4500; /* Highlight color */
+        }
+
+        ul {
+            margin: 10px 0;
+            padding-left: 20px;
+            list-style-type: disc;
+            color: #333;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 30px;
+            border-radius: 0 0 10px 10px;
+        }
+
+        .pagination {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .pagination a {
+            color: #ff4500; /* Pagination link color */
+            padding: 8px 16px;
+            text-decoration: none;
+            border: 2px solid #ff4500;
+            border-radius: 5px;
+            margin: 0 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .pagination a:hover {
+            background-color: #ff4500;
+            color: #fff;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes scroll {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BEST FOOD SPOTS IN PALAKKAD</h1>
+    </header>
+    <div class="container">
+        <div class="marquee">
+            <p>Welcome to our amazing webpage! Enjoy exploring our content.</p>
+        </div>
+        <h2>WELCOME TO OUR WEBPAGE</h2>
+        <img src="6208518378084222145.jpg" height="250" width="600" alt="Decorative Image"/>
+    </div>
+    <footer>
+        &copy; 2024 My Website. All rights reserved.
+    </footer>
+</body>
+</html>

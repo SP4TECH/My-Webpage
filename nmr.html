@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NMR Uptown Restaurant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #e9ecef;
+            color: #333;
+        }
+
+        header {
+            background: #ff4500;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 28px;
+            animation: fadeInDown 1s ease-in-out;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            border: 2px solid #ff4500;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        h2 {
+            color: #ff4500;
+            margin-top: 20px;
+            border-bottom: 2px solid #ff4500;
+            padding-bottom: 10px;
+            animation: fadeInLeft 1s ease-in-out;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border: 2px solid #ff4500;
+            animation: zoomIn 1s ease-in-out;
+        }
+
+        .restaurant-img {
+            display: block;
+            margin: 20px auto;
+            max-width: 600px;
+        }
+
+        .dish-img {
+            float: right;
+            margin-left: 20px;
+            max-width: 250px;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #ff4500;
+        }
+
+        ul {
+            margin: 10px 0;
+            padding-left: 20px;
+            list-style-type: disc;
+            color: #333;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 30px;
+            border-radius: 0 0 10px 10px;
+        }
+
+        .pagination {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .pagination a {
+            color: #ff4500;
+            padding: 8px 16px;
+            text-decoration: none;
+            border: 2px solid #ff4500;
+            border-radius: 5px;
+            margin: 0 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .pagination a:hover {
+            background-color: #ff4500;
+            color: #fff;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>1.NMR UPTOWN RESTAURANT</h1>
+    </header>
+
+    <div class="container">
+        <img src="nmrup.jpg" alt="NMR Uptown Restaurant" class="restaurant-img">
+
+        <h2>NMR UPTOWN</h2>
+        <p>NMR UPTOWN Restaurant is located in Palakkad and offers an exceptional experience. The ambiance is inviting, with a pleasant atmosphere and attentive service. The food is absolutely delicious, offering a wide range of authentic Kerala dishes that are both flavorful and freshly prepared. I particularly enjoyed their traditional Kerala meals, which were served with great care and attention to detail. Overall, NMR UPTOWN provided a memorable dining experience, and I would highly recommend it to anyone visiting Palakkad looking for authentic South Indian cuisine.</p>
+
+        <h2>Ambience</h2>
+        <img src="1_shop3512.jpg" alt="Restaurant Ambience" class="restaurant-img">
+        <ul>
+            <li><span class="highlight">Lighting:</span> Whether it's soft, ambient lighting or unique fixtures, good lighting sets the mood.</li>
+            <li><span class="highlight">Decor:</span> Thoughtful interior design, such as comfortable seating, interesting artwork, and cohesive themes, enhances the dining experience.</li>
+        </ul>
+
+        <h2>Culinary Delights</h2>
+        <p>Exploring the Diverse Palette of Flavors and Textures:</p>
+        <ul>
+            <li><span class="highlight">Kerala Sadya:</span> A traditional feast served on a banana leaf, consisting of rice, sambar, avial, thoran (stir-fried vegetables), pachadi, pickle, and desserts like payasam.</li>
+            <img src="nmr2.jpeg" alt="Kerala Sadya" class="dish-img">
+            <li><span class="highlight">Appam with Stew:</span> Soft and fluffy rice pancakes served with a creamy coconut milk-based stew with vegetables or meat.</li>
+            <li><span class="highlight">Puttu and Kadala Curry:</span> Steamed cylinders of ground rice served with a spicy curry made with black chickpeas, coconut, and spices.</li>
+            <li><span class="highlight">Malabar Parotta and Chicken Curry:</span> Layers of flaky, crispy bread served with a flavorful chicken curry.</li>
+            <li><span class="highlight">Meen Curry (Fish Curry):</span> Spicy and tangy fish curry made with coconut milk and a blend of spices.</li>
+            <li><span class="highlight">Elaneer Payasam:</span> A refreshing dessert made with tender coconut pieces, coconut milk, and jaggery, served chilled.</li>
+            <li><span class="highlight">Kozhi Varutharachathu:</span> Spicy chicken curry cooked in roasted coconut gravy.</li>
+        </ul>
+        <p>These dishes highlight the authentic flavors and diversity of Kerala cuisine, making Palakkad a paradise for food enthusiasts.</p>
+        <p><span class="highlight">Shop timing:</span> 11 AM - 10 PM. It's a must-try spot.</p>
+
+        <div class="pagination">
+            <a href="home.html">Home</a>
+            <a href="home.html">&laquo; Previous</a>
+            <a href="vox kitchen.html">Next &raquo;</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 NMR UPTOWN RESTAURANT. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

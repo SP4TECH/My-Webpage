@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Kitchen</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-O8CZZW6N5J5R0+eUg0tKQrUFgEVl0+L2KjB9VZC5Gx3ZyMq9Q7FjCj1+CJ6VkB/gR6MK3nFVtG6zJuQn+ZmaYg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* General Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        h1, h2 {
+            color: #ff7e5f;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            margin-top: 40px;
+        }
+
+        img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            object-fit: cover;
+            animation: zoomIn 1s ease;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin: 20px auto;
+            max-width: 800px;
+            text-align: justify;
+        }
+
+        b {
+            color: #ff7e5f;
+        }
+
+        /* Container Styles */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            border: 2px solid #ff7e5f; /* Added border */
+        }
+
+        /* Section Styles */
+        .section {
+            border: 2px solid #ddd; /* Light grey border for sections */
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .section h2 {
+            color: #ff7e5f;
+            margin-bottom: 15px;
+        }
+
+        .section ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        .section li {
+            margin-bottom: 10px;
+        }
+
+        /* Animations */
+        @keyframes zoomIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Pagination Styles */
+        .pagination {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .pagination a {
+            color: #ff7e5f;
+            padding: 8px 16px;
+            text-decoration: none;
+            border: 2px solid #ff7e5f;
+            border-radius: 5px;
+            margin: 0 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .pagination a:hover {
+            background-color: #ff7e5f;
+            color: #fff;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Heading -->
+        <h1>Social Kitchen</h1>
+        
+        <!-- Image -->
+        <img src="sk4.jpg" alt="Social Kitchen Overview">
+        
+        <!-- Introduction -->
+        <div class="section">
+            <h2>Introduction</h2>
+            <p>
+                Social Kitchen is a concept that has gained popularity in recent years, blending cooking, dining, and social interaction into a communal experience. Here are some key aspects and features:
+            </p>
+            <ul>
+                <li><strong>Community Engagement:</strong> It fosters a sense of community by bringing people together through food and cooking.</li>
+                <li><strong>Shared Space:</strong> It often involves shared kitchen spaces where individuals or groups can cook, learn, and dine together.</li>
+                <li><strong>Cooking Classes:</strong> Social Kitchens frequently offer cooking classes where participants can learn new culinary skills from chefs or experienced cooks.</li>
+                <li><strong>Interactive Learning:</strong> Participants engage in hands-on learning experiences, exploring different cuisines and techniques.</li>
+                <li><strong>Culinary Exploration:</strong> It encourages exploration of diverse foods and flavors, promoting culinary diversity and appreciation.</li>
+                <li><strong>Cultural Exchange:</strong> Participants from different cultural backgrounds can share their culinary traditions and heritage.</li>
+                <li><strong>Team Building:</strong> It's used for team-building exercises in corporate settings, fostering collaboration and communication among colleagues.</li>
+                <li><strong>Health and Nutrition:</strong> Some Social Kitchens focus on promoting healthy eating habits and nutrition education.</li>
+                <li><strong>Creative Expression:</strong> It allows for creativity in cooking and meal presentation, encouraging participants to express themselves through food.</li>
+                <li><strong>Inclusive Environment:</strong> It strives to create an inclusive environment where everyone feels welcome regardless of their cooking skills or background.</li>
+                <li><strong>Networking Opportunities:</strong> Participants can network and connect with others who share similar interests in food and cooking.</li>
+                <li><strong>Event Space:</strong> Social Kitchens may double as event spaces for private gatherings, parties, or celebrations.</li>
+                <li><strong>Environmental Consciousness:</strong> Some Social Kitchens promote sustainability by using local ingredients, reducing food waste, or promoting eco-friendly practices.</li>
+                <li><strong>Community Support:</strong> They may engage in community outreach programs, such as cooking for those in need or supporting local food banks.</li>
+                <li><strong>Family-Friendly Activities:</strong> Some Social Kitchens offer family cooking classes or activities, promoting bonding through shared culinary experiences.</li>
+                <li><strong>Virtual Platforms:</strong> In the digital age, virtual Social Kitchens have emerged, allowing participants to cook and connect online.</li>
+                <li><strong>Pop-up Events:</strong> Social Kitchens often host pop-up events in different locations, bringing their concept to diverse communities.</li>
+                <li><strong>Celebrity Chefs and Guests:</strong> They may feature appearances or collaborations with renowned chefs, adding a special element to the experience.</li>
+                <li><strong>Educational Workshops:</strong> Beyond cooking, they may offer workshops on topics like food photography, wine pairing, or kitchen gardening.</li>
+                <li><strong>Continuous Learning:</strong> Participants often leave with new skills, recipes, and a deeper appreciation for the social aspects of food and cooking.</li>
+            </ul>
+        </div>
+        
+        <!-- Ambience -->
+        <div class="section">
+            <h2>Ambience</h2>
+            <img src="skam.jpeg" alt="Social Kitchen Ambience">
+            <p>
+                Social Kitchen restaurant exudes a modern yet inviting atmosphere. The interior décor blends contemporary design with cozy elements. Warm, ambient lighting sets a relaxed mood throughout the space. Tables are strategically arranged to encourage interaction among diners. Comfortable seating enhances the dining experience. The color scheme is typically neutral with occasional pops of vibrant tones. Artwork and decor elements reflect a trendy and urban aesthetic. Background music adds to the lively but not overwhelming ambiance. Staff members are attentive and friendly, contributing to a welcoming vibe. The restaurant often buzzes with the hum of conversations and laughter. Large windows or open spaces may offer views or a sense of openness. The overall layout promotes a communal dining experience. Each area of the restaurant may have its own unique character and feel. Details like fresh flowers or subtle table settings add elegance. The bar area might feature its own distinctive ambiance, with a focus on mixology. Depending on the time of day, natural light might play a role in the ambiance. Evening settings may include dimmer lighting for a more intimate feel. The kitchen's aromas subtly enhance the overall sensory experience. Patrons often enjoy a sense of being part of a dynamic social scene. Overall, Social Kitchen creates an atmosphere that combines comfort, style, and a vibrant social energy, making it a popular spot for dining and socializing alike.
+            </p>
+        </div>
+        
+        <!-- Culinary Delights -->
+        <div class="section">
+            <h2>Culinary Delights</h2>
+            <img src="sk2.jpg" alt="Social Kitchen Culinary Delights">
+            <ul>
+                <li><strong>Innovative Menu:</strong> Social Kitchen offers an innovative menu that blends contemporary flavors with classic dishes.</li>
+                <li><strong>Fresh Ingredients:</strong> They prioritize fresh, seasonal ingredients sourced locally when possible, ensuring quality and flavor.</li>
+                <li><strong>Varied Selection:</strong> The menu boasts a diverse selection of appetizers, mains, and desserts to cater to various tastes and preferences.</li>
+                <li><strong>Signature Dishes:</strong> Expect signature dishes that showcase the chef's creativity and expertise, often highlighting local specialties.</li>
+                <li><strong>Creative Presentation:</strong> Plates are artfully presented, enhancing the dining experience visually.</li>
+                <li><strong>Farm-to-Table Philosophy:</strong> Embracing a farm-to-table philosophy, they emphasize sustainability and support for local producers.</li>
+                <li><strong>Global Influences:</strong> Dishes may feature global influences, offering a culinary journey through different cuisines.</li>
+                <li><strong>Small Plates and Sharing Options:</strong> They may offer small plates or sharing options, ideal for sampling a variety of flavors.</li>
+                <li><strong>Vegetarian and Vegan Choices:</strong> A focus on vegetarian and vegan options ensures inclusivity for all dietary preferences.</li>
+                <li><strong>Seafood and Meat:</strong> Seafood and meat dishes are prepared with care, ensuring tenderness and flavor.</li>
+                <li><strong>Interactive Dining Experiences:</strong> Some dishes might offer interactive elements, such as DIY plating or tableside preparations.</li>
+                <li><strong>Seasonal Specials:</strong> Seasonal specials reflect the freshest ingredients and current culinary trends.</li>
+                <li><strong>Decadent Desserts:</strong> Indulge in decadent desserts crafted to satisfy any sweet tooth, with creative twists on traditional favorites.</li>
+                <li><strong>Craft Cocktails and Beverages:</strong> Pair your meal with craft cocktails, local beers, or a curated wine list that complements the flavors.</li>
+                <li><strong>Attention to Detail:</strong> Attention to detail in both preparation and presentation elevates the dining experience.</li>
+                <li><strong>Chef's Recommendations:</strong> Trust the chef's recommendations for seasonal highlights or featured dishes.</li>
+                <li><strong>Family-Friendly Options:</strong> They may offer family-friendly options, ensuring there's something for everyone.</li>
+                <li><strong>Bar Snacks and Appetizers:</strong> Bar snacks and appetizers are perfect for enjoying alongside drinks in a relaxed setting.</li>
+                <li><strong>Consistency and Quality:</strong> Consistency and quality are key, ensuring every visit to Social Kitchen is a memorable culinary adventure.</li>
+            </ul>
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination">
+            <a href="home.html">Home</a>
+            <a href="vox kitchen.html"class="button">Previous</a>
+
+            <a href="nahdhi.html"class="button">Next</a>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
